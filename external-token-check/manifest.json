@@ -3,11 +3,9 @@
     "external-token-check.py"
   ],
   "custom_middleware": {
-    "pre": [
-      {
-        "name": "ExternalTokenValidatorMiddleware"
-      }
-    ],
+    "auth_check": {
+      "name": "ExternalTokenValidatorMiddleware"
+    },
     "driver": "python"
   },
   "checksum": "",
